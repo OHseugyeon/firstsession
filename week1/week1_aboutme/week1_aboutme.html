@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="'UTF-8" />
+    <title>INTRODUCE ME</title>
+    <!--작성한 main CSS와 연결-->
+    <link rel="stylesheet" href="./main_aboutme.css" />
+  </head>
+  <body>
+    <div class="mainbox">
+      <div class="title-box">
+        <img class="me-img" src="fwaimages/me.jpg" />
+        <p class="title">오승연<br />컴퓨터학과 21학번</p>
+      </div>
+      <!--div mainbox 안에 모든 내용을 쭉 적다보니 구분이 안되어서 파트별로
+        section을 사용해 가독성? 때문에 코드를 나누어둠. 별다른 의미 X-->
+      <section>
+        <h2>About ME</h2>
+        <p class="about-me-text">
+          AGE : KR_23<br />
+          NATION : 한국<br />
+          HOBBY : 예쁜 카페 찾아가기, 클라이밍<br />
+          INTEREST : 웹 개발, DB
+        </p>
+      </section>
+      <section>
+        <h2>EXPERIENCE</h2>
+        <!--float-wrap 부분에 묶인 class 내용들은 한 줄에 두개가 표시될 수 있도록 작성하기 위해-->
+        <div class="float-wrap">
+          <p class="title-text">LANGUAGE</p>
+        </div>
+        <!--한줄에 두개가 표현될 필요가 없는 description text는 따로 분리해서 작성함-->
+        <p class="desc-text">C, JAVA, JAVA-SCRIPT, Python</p>
+
+        <div class="float-wrap">
+          <p class="title-text">UNIV-PERIOD</p>
+          <p class="year-text">2021 ~ ing</p>
+        </div>
+        <p class="desc-text">동덕여자대학교 컴퓨터학과 재학중</p>
+
+        <div class="float-wrap">
+          <p class="title-text">멋쟁이 사자처럼</p>
+          <p class="year-text">2023 ~ ing</p>
+        </div>
+        <p class="desc-text">11기 프론트엔드 아기사자</p>
+      </section>
+      <section>
+        <h2>SNS</h2>
+        <div class="sns-wrap">
+          <a href="https://blog.naver.com/osyswm011119">
+            <img class="sns-img" src="fwaimages/blog.png" />
+          </a>
+          <a href="https://www.instagram.com/_sseung._.01/">
+            <img class="sns-img" src="fwaimages/insagram.jpeg" />
+          </a>
+          <a href="https://github.com/OHseugyeon">
+            <img class="sns-img" src="fwaimages/git.png" />
+          </a>
+        </div>
+      </section>
+      <section>
+        <h2>한줄 소개</h2>
+        <p class="about-me-text">
+          동덕여자대학교 11기 프론트엔드 아기사자 20210798 컴퓨터학과 오승연
+        </p>
+      </section>
+    </div>
+  </body>
+</html>

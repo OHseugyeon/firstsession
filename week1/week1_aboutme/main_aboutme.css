@@ -1,0 +1,108 @@
+/*구글 웹 폰트를 사용하고자 @import url을 사용해서 폰트 선언을 작성*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap");
+
+* {
+  font-family: "Montserrat";
+}
+/*공통되는 부분은 묶어서 작성*/
+body,
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8a1971;
+  /*About ME, EXPERIENCE, SNS 아래에 막대*/
+  border-bottom: 1px solid #796262;
+  margin-bottom: 16px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+p {
+  /*맨 아래 한줄소개 부분의 글씨*/
+  font-size: 20px;
+}
+
+.me-img {
+  color: #282828;
+  float: left;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  /*테두리를 둥글게 만들기 위해서*/
+  border-radius: 20%;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #282828;
+  float: left;
+}
+
+/*About ME, EXPERIENCE, SNS, 한줄소개 사이의 간격 조정을 위해*/
+section {
+  margin-bottom: 24px;
+}
+
+.about-me-text {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/*text-align을 하면서 한 줄로 두 개가 정렬되도록 만들고자 overflow에 hidden값을 추가시킴*/
+.float-wrap {
+  overflow: hidden;
+}
+
+/*Language, UNIV-PERIOD, 멋쟁이 사자처럼*/
+.title-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #282828;
+  float: left; /*title의 왼쪽은 초기화*/
+  margin-right: 10px;
+}
+/*title 내부 내용*/
+.desc-text {
+  font-size: 9px;
+  color: #282828;
+  padding-left: 16px;
+}
+/*title_year*/
+.year-text {
+  font-size: 11px;
+  font-weight: bold;
+  color: #282828;
+  float: right; /*year의 오른쪽은 초기화*/
+}
+
+.mainbox {
+  border: 5px solid #ebebeb;
+  width: 610px;
+  text-align: left;
+  /*웹 페이지 상단 좌측 부분에 딱 붙는 부분을 방지하여 시각적으로 페이지가 온전하게? 보이게 하기 위해서*/
+  padding: 30px;
+  margin: 10px;
+  /*main 박스에 살짝의 음영? 그림자를 나타내고자*/
+  box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.title-box {
+  /*왼쪽 정렬*/
+  text-align: left;
+  /*text-align을 하면서 한 줄로 사진과 (이름,전공 및 학번) 두 개가 정렬되도록 만들고자
+  overflow hidden값을 추가시킴*/
+  overflow: hidden;
+}
+
+.sns-img {
+  width: 30px;
+  height: 30px;
+}
